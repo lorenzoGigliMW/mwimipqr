@@ -23,7 +23,7 @@ const logger = store => (next) => {
   };
 
 const store = configureStore({
-    reducer: rootReducer, middleware: [logger, epicMiddleware]// .concat(asyncMiddleware)
+    reducer: rootReducer, middleware: [logger, epicMiddleware]
     
 })
 epicMiddleware.run(provaEpic);
